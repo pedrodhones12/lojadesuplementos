@@ -1,0 +1,413 @@
+/* classes gerais */
+*{
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: poppins, sans-serif;
+}
+.interface{
+    padding: 40px 4%;
+    justify-content: center;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+/* cabeçalho */
+.img-logo img{
+    border-radius: 15px;    
+}
+.abas{
+    padding: 60px;
+}
+.abas a{
+   display: inline-block;
+   padding: 20px;
+   text-decoration: none;
+   font-size: 18px;
+   color: rgba(240, 248, 255, 0.367);
+   transition: .2s;
+}
+.abas a:hover{
+    transform: scale(1.05);
+    color: white;
+}
+.abas .btn-comprar{
+    background-color: white;
+    border: none;
+    border-radius: 24px;
+    color: black;
+    font-weight: 600;
+    position: relative;
+}
+.abas .btn-comprar:hover{
+    color: black;
+}
+.line-footer{
+    padding: 20px 0;
+}
+.borda{
+    border-top: 2px solid white;
+}
+.conteudo-carousel{
+    border: 2px solid white;
+    padding: 15px 15px;
+    border-radius: 24px;
+    background-color: white;
+}
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+}
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-slide img{
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+/* estilo do menu mobile */
+.btn-abrir-menu{
+    display: none;
+}
+.btn-abrir-menu i{
+    color: white;
+    font-size: 40px;
+}
+.menu-mobile{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+} 
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+.menu-mobile .btn-fechar i{
+    color: white;
+    font-size: 30px;
+
+}
+.menu-mobile nav ul{
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+    text-decoration: none;
+}
+.menu-mobile nav ul li a:hover{
+    background-color: rosybrown;
+    color: black;
+}
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.541);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+/* frase de efeito */
+.conteudo-txt{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px 20px;
+    border: 2px solid white;
+}
+.conteudo-txt h1{
+    text-align: center;
+}
+/* conteudo creatina */
+.conteiner{
+    padding-top: 5%;
+}
+.conteiner h1{
+    text-align: center;
+    font-size: 40px;
+}
+.flex{
+    display: flex;
+    padding-top: 2%;
+}
+.creatinas{
+    display: flex;
+}
+.creatinas .img{
+    text-align: center;
+    padding: 30px 50px;
+    border: 2px solid white;
+    background-color: white;
+    margin: 20px; 
+    border-radius: 20px; 
+}
+.img img{
+    border-radius: 15px;
+    transition: .2s;
+}
+.img img:hover{
+    transform: scale(1.05);
+}
+.img h2{
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: black;
+    font-size: 16px;
+}
+.img a{
+    text-decoration: none;   
+}
+.img h3{
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 800;
+    transition: .2s;
+}
+.img h3:hover{
+    transform: scale(1.05);
+    background-color: green;
+}
+/* conteudo whey */
+.conteiner-2{
+    padding-top: 5%;
+}
+.conteiner-2 h1{
+    text-align: center;
+    font-size: 40px;
+}
+.flex{
+    display: flex;
+    padding-top: 2%;
+}
+.whey-protein{
+    display: flex;
+}
+.whey-protein .img{
+    text-align: center;
+    padding: 30px 50px;
+    background-color: white;
+}
+.whey-protein .whey-pote{
+    padding:10px 10px;
+}
+/* projetos */
+.projetos{
+    padding: 40px 11%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.inicio-projetos{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.conteudo-projetos{
+    justify-content:center;
+    display: flex;
+    padding-left: 100%;
+    animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.projeto{
+    display: inline-block;
+    width: 450px;
+    height: 300px;
+    margin: 20px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 40px;
+    color: black;
+    background-color: aliceblue;
+}
+.projeto img{
+    transition: .2s;
+}
+.projetos img:hover{
+    transform: scale(1.05);
+}
+/* pre treino */
+.conteiner-3{
+    padding-top: 5%;
+}
+.conteiner-3 h1{
+    text-align: center;
+    font-size: 40px;
+}
+.flex{
+    display: flex;
+    padding-top: 2%;
+}
+.pre-treino{
+    display: flex;
+}
+.pre-treino .img{
+    text-align: center;
+    padding: 30px 50px;
+    border: 2px solid white;
+    background-color: white;
+    margin: 20px; 
+    border-radius: 20px; 
+}
+/* rodape */
+.rodape{
+    padding-top: 2%;
+}
+.flex-rodape{
+    display: flex;
+}
+/* responsividade */
+@media screen and (max-width: 1139px){
+    .flex{
+        flex-direction: column-reverse;
+    }
+    .abas{
+        display: none;
+    }
+    /* menu mobile */
+    .btn-abrir-menu{
+        display: block;
+    }
+    /* carrosel */
+    .conteudo-carousel{
+        background-color: black;
+        border: none;
+    }
+    /* frase de efeito */
+    .conteudo-txt{
+        width: 70%;
+    }
+    /* creatinas */
+    .creatinas .img{
+        padding: 5px 5px;
+        background-color: white;
+        margin: 10px; 
+    }
+    .img img{
+        width: 150px;
+    }
+    .img .creatina-max{
+        width: 155px;
+    }
+    /* whey protein */
+    .whey-protein{
+        display: inline-block;
+        text-align: center;
+    }
+    .whey-protein .img{
+        padding: 10px 5px;
+        margin: 10px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    .whey-protein img{
+        width: 150px;
+    }
+    .whey-protein .morango{
+        width: 150px;
+    }
+    .whey-protein .chocolate{
+        width: 150px;
+    }
+    /* carrosel projetos*/
+    .projeto{
+        margin: 10px;
+        background-color: black;
+    }
+    .conteudo-projetos{
+        animation: scroll 15s linear infinite;
+    }
+    /* pre treino */
+    .pre-treino .img{
+        padding: 0;
+        margin: 0;
+        border-radius: 0; 
+    }
+    .pre-treino .img img{
+        width: 100%;
+    }
+    .pre-treino .img .horus{
+        width: 70%;
+    }
+    .pre-treino .img .rush{
+        width: 97%;
+    }
+    .pre-treino .img .glutamina{
+        width: 85%;
+    }
+    .pre-treino .img .maca-peruana{
+        width: 80%;
+    }
+    .pre-treino .img .longjack{
+        width: 87%;
+    }
+    .pre-treino .img .c4{
+        width: 82%;
+    }
+    .pre-treino .img .cutter{
+        width: 70%;
+    }
+    .pre-treino .img .toma{
+        width: 70%;
+    }
+}
